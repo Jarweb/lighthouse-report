@@ -1,0 +1,36 @@
+{
+  "name": "lighthouse-report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "nodemon --delay 1 ./src/server.js",
+    "start:client": "parcel watch ./public/index.html --out-dir dist --target browser",
+    "clean": "rimraf dist",
+    "build:client": "parcel build ./public/index.html --out-dir dist --target browser",
+    "build": "cross-env NODE_ENV=production npm run clean && npm run build:client",
+    "server": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "cross-env": "^7.0.2",
+    "koa": "^2.12.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.2",
+    "lighthouse": "^6.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-lighthouse-viewer": "^2.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "nodemon": "^2.0.4",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2"
+  }
+}

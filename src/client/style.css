@@ -1,0 +1,49 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	background: #000;
+}
+
+.lh-search {
+	--color-gray: #000;
+	background: var(--color-gray);
+	padding-top: 30px;
+	padding-bottom: 20px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.lh-search input {
+	height: 40px;
+	width: 500px;
+	padding: 0 10px;
+	margin: 0;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+}
+.lh-search-btn{
+	position: relative;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+  text-align: center;
+	width: 80px;
+	background: #ffa400;
+	border-radius: 4px;
+	margin-left: 8px;
+	color: #fff;
+	cursor: pointer;
+}
+.lh-loading {
+	padding-top: 200px;
+	text-align: center;
+	color: #fff;
+}
+.lh-error {
+	padding-top: 200px;
+	text-align: center;
+	color: #fff;
+}
