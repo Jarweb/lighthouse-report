@@ -21,7 +21,7 @@
     "koa": "^2.12.0",
     "koa-static": "^5.0.0",
     "koa-views": "^6.2.2",
-    "lighthouse": "^6.0.0",
+    "lighthouse": "^9.6.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-lighthouse-viewer": "^2.8.0"
